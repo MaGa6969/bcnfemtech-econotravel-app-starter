@@ -1,6 +1,19 @@
+body {
+  margin: 0;
+}
 #app {
   height: 100vh;
   padding: 20%;
+}
+.navBar {
+  display: flex;
+  align-items: center;
+  background-color: aqua;
+  height: 50px;
+      a {
+        padding: 10px;
+        text-decoration: none;
+      }
 }
 
 .experiencesList {
