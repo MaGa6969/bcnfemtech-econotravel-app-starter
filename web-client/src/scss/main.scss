@@ -9,14 +9,22 @@ body {
 .navBar {
   display: flex;
   align-items: center;
-  background-color: aqua;
-  height: 50px;
+  background-color:#2f5135;
+  height: 15vh;
       a {
         padding: 10px;
         text-decoration: none;
+        color: #efb810;
+        font-size: 20px;
+        font-family: "Century Gothic";
       }
 }
 
+.logo {
+  width: 12%;
+
+}
+/*
 .experiencesList {
   border: thin solid #444444;
   width: 300px;
@@ -65,4 +73,4 @@ body {
   &:hover &__details {
     width: 100%;
   }
-}
+}*/
