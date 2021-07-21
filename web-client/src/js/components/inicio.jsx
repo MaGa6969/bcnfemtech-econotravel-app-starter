@@ -1,5 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
 
-export const Inicio = () => {
-
-}
+export const Inicio = () => (
+    <div>
+        Aqui va la pagina inicial
+    </div>
+);

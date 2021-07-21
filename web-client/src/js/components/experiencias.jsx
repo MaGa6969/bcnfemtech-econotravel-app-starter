@@ -1,5 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
 
-export const Experiencias = () => {
-
-}
+export const Experiencias = () => (
+    <div>
+        coming soon experiencias
+    </div>
+);
