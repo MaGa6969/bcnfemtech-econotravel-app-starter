@@ -14,6 +14,7 @@ body {
   justify-content: space-around;
   background-color: #2f5135;
   height: 15vh;
+
   .logo {
     width: 12%;
   }
@@ -22,9 +23,9 @@ body {
     background-color: #4b7f55;
     border-radius: 20px;
     padding: 20px;
-    box-shadow: 2px 4px 3px #e2c9c9;
+    box-shadow: 2px 4px 3px #9df203;
     text-decoration: none;
-    color: #efb810;
+    color: #9df203;
     font-size: 25px;
     font-family: "Century Gothic", serif;
     font-weight: bolder;
@@ -32,6 +33,9 @@ body {
   }
 }
 
+.eco {
+  width: 100%;
+}
 
 
 /*
