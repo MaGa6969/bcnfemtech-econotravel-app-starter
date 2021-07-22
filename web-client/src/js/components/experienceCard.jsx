@@ -11,6 +11,7 @@ export const ExperienceCard = (props) =>
         <div>{props.experiencia.etiqueta}</div>
 
     </div>
+/*
 function Card(props){
         return(
             <div className="card">
@@ -24,4 +25,4 @@ function Card(props){
                 <p  className="card__etiqueta">{props.etiqueta}</p>
         </div>
         )
-})
+})*/
