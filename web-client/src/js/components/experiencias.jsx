@@ -1,7 +1,10 @@
 import * as React from 'react';
+import {ExperienceCard} from "./experienceCard";
 
-export const Experiencias = () => (
-    <div className={"experiencias"}>
-        coming soon experiencias
-    </div>
+export const Experiencias = (props) => (
+    <section className="experienciesSection">
+        {props.experiencias.map(experiencia =>
+            <ExperienceCard experiencia={experiencia}/>
+        )}
+    </section>
 );
