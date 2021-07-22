@@ -2,28 +2,38 @@ body {
   margin: 0;
   padding: 0;
 }
+
 #app {
   height: 100vh;
   margin: 0;
 }
+
 .navBar {
   display: flex;
   align-items: center;
-  background-color:#2f5135;
+  justify-content: space-around;
+  background-color: #2f5135;
   height: 15vh;
-      a {
-        padding: 10px;
-        text-decoration: none;
-        color: #efb810;
-        font-size: 20px;
-        font-family: "Century Gothic";
-      }
+  .logo {
+    width: 12%;
+  }
+
+  a {
+    background-color: #4b7f55;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 2px 4px 3px #e2c9c9;
+    text-decoration: none;
+    color: #efb810;
+    font-size: 25px;
+    font-family: "Century Gothic", serif;
+    font-weight: bolder;
+
+  }
 }
 
-.logo {
-  width: 12%;
 
-}
+
 /*
 .experiencesList {
   border: thin solid #444444;
