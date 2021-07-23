@@ -1,10 +1,21 @@
 import * as React from 'react';
-import {ExperienceCard} from "./experienceCard";
+import {Card} from "./Card";
+import paseobici from './assets/paseobici.png'
+const cards = [
+    {
+        id: 1,
+        title: "paseo en bici",
+        image: paseobici,
+        precio: "145€",
+        descripcion: "lqhertjklfghqwiprgñaSLRGHN"
+    }
+]
 
-export const Experiencias = (props) => (
-    <section className="experienciesSection">
-        {props.experiencias.map(experiencia =>
-            <ExperienceCard experiencia={experiencia}/>
-        )}
-    </section>
-);
+
+export function Experiencias(){
+    return (
+        <div className="experiencia">
+            <Card  />
+        </div>
+    )}
+
