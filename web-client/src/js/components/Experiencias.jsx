@@ -14,8 +14,14 @@ const cards = [
 
 export function Experiencias(){
     return (
-        <div className="experiencia">
-            <Card  />
+        <div className="cardContainer">
+            {
+                cards.map(card => (
+                    <div className="experiencia" key={card.id}>
+                        <Card title={card.title} imgSrc={card.image} descripcion={card.descripcion} precio={card.precio} />
+                    </div>
+                ))
+            }
         </div>
     )}
 
