@@ -2,7 +2,9 @@ import * as React from 'react';
 import {Card} from "./Card";
 import paseobici from './assets/paseobici.png';
 import paseobarco from './assets/paseobarco.png';
-import BCNmodernista from './assets/BCNmodernista.png'
+import BCNmodernista from './assets/BCNmodernista.png';
+import huerto from './assets/huerto.png';
+import Montserrat from './assets/Montserrat.png';
 
 const cards = [
     {
@@ -39,6 +41,26 @@ const cards = [
         etiquetas: "Ciudad, a pie, excursión larga."
 
     },
+    {
+        id: 4,
+        title: "Del huerto a la mesa",
+        image: huerto,
+        precio: "145€",
+        descripcion: "Comparte con los más pequeños las maravillas de la naturaleza. En esta excursión breve de tres horas, podréis plantar vuestras propias hortalizas y verduras en el huerto de Can Gilabert, ubicado en el corazón del Montbaig. Durante una hora y media, aprenderéis a cuidar de vuestro propio huerto, plantaréis y abonaréis vuestras propias plantas, y también recogeréis parte de los ingredientes que los expertos chefs de Can Gilabert utilizarán para preparar la posterior cena, donde disfrutaréis de la experiencia de consumir productos recién recogidos de la tierra con vuestras propias manos. Actividad ideal para familiarizar a los más pequeños de la familia con el estilo de vida rural y la agricultura sostenible. Asimismo, obtendréis como obsequio una botella de aceite virgen extra cultivado y preparado en Can Gilabert, obra de la familia Gilabert, que lleva más de 80 años cultivando olivos.",
+        duracion: "3h",
+        accesibilidad: "Actividad disponible para todas las edades. El acceso al huerto en silla de ruedas está garantizado.",
+        etiquetas: "Montaña, a pie, excursión corta."
+    },
+    {
+        id: 5,
+        title: "Arte en la montaña sagrada",
+        image: Montserrat,
+        precio: "125€",
+        descripcion: "Disfruta de la impresionante Montaña de Montserrat donde encontraréis el Museo con las salas modernistas de Puig i Cadafalch, lugar que acoge colecciones de gran valor en el corazón de la emblemática montaña. En el Museo encontraréis pinturas del Renacimiento y del Barroco que conviven con autores de los siglos XIX y XX, objetos del Próximo Oriente y orfebrería. Además de disfrutar de un paseo guiado por la montaña y el Museo, esta actividad incluye tentempié variado acompañado de vino espumoso, cava brut o refresco. ",
+        duracion: "2h",
+        accesibilidad: "Actividad disponible para todas las edades. El acceso al museo y al restaurante en silla de ruedas está garantizado.",
+        etiquetas: "Montaña, a pie, excursión corta"
+    }
 
 ]
 
