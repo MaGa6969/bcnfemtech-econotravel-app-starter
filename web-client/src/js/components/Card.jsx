@@ -13,6 +13,16 @@ export function Card ({imgSrc, title, descripcion, precio, duracion, accesibilid
                 <h5 className="card__accesibilidad">{accesibilidad}</h5>
                 <p className="card__etiquetas">{etiquetas}</p>
             </div>
+        {/*   <IconButton
+                className={clsx(classes.expand, {
+                    [classes.expandOpen]: expanded,
+                })}
+                onClick={handleExpandClick}
+                aria-expanded={expanded}
+                aria-label="show more"
+            >
+                <ExpandMoreIcon />
+            </IconButton> */}
         </div>
     )
 }
