@@ -1,5 +1,12 @@
 import * as React from "react";
 import {useState} from "react";
+import DatePicker from "react-datepicker";
+import 'react-datepicker/dist/react-datepicker-cssmodules.css';
+
+
+
+
+
 
 export const Reservas = () => {
 
@@ -19,8 +26,15 @@ export const Reservas = () => {
         })
     }
 
+    const enviarDatos = (event) => {
+        event.preventDefault();
+
+    }
+
+    const [selectedDate, setSelectedDate] = useState(new Date());
+
     return (
-        <form>
+        <form onSubmit={enviarDatos}>
             <label>Actividades</label>
             <br/>
             <select onChange={inputChange}
@@ -30,13 +44,18 @@ export const Reservas = () => {
                 <option value="ciudad">Ciudad</option>
             </select>
             <br/>
-            <label>Fecha</label>
             <br/>
-            <input
-                type="text"
-                name="fecha"
-                onChange={inputChange}
+            <label>Fecha</label>
+            <DatePicker
+                selected={selectedDate}
+                onChange={date => setSelectedDate(date)}
+                dateFormat='dd/MM/yyyy'
+                isClearable
+                showYearDropdown
+                scrollableMonthYearDropdown
+                minDate={new Date()}
             />
+            <br/>
             <br/>
             <label>Nombre y Apellidos</label>
             <br/>
@@ -46,6 +65,7 @@ export const Reservas = () => {
                 onChange={inputChange}
             />
             <br/>
+            <br/>
             <label>Personas</label>
             <br/>
             <input
@@ -53,6 +73,7 @@ export const Reservas = () => {
                 name="personas"
                 onChange={inputChange}
             />
+            <br/>
             <br/>
             <label>Teléfono de contacto</label>
             <br/>
@@ -62,6 +83,7 @@ export const Reservas = () => {
                 onChange={inputChange}
             />
             <br/>
+            <br/>
             <label>Email</label>
             <br/>
             <input
@@ -69,6 +91,7 @@ export const Reservas = () => {
                 name="email"
                 onChange={inputChange}
             />
+            <br/>
             <br/>
             <button type="submit">Reserva</button>
 
