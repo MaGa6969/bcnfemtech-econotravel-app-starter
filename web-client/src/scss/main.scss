@@ -39,6 +39,8 @@ body {
 form {
   padding: 30px;
 }
+.cardContainer{
+
 
 .card {
   width: 100%;
@@ -58,10 +60,17 @@ form {
     title {
       text-align: center;
       margin: 20px;
+      font-family: "Century Gothic", serif;
+      font-size: 20px;
+      font-weight: bold;
     }
+    //accesibilidad {
+     // font-family: "Century Gothic", serif;
+      //font-size: 20px;
+   // }
+
   }
-
-
+}
 }
 /*
 .experiencesList {
