@@ -1,31 +1,63 @@
-body {
-  background-color: #e3bb99;
+.pageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+
 }
 
-label {
-  font-weight: bold;
-  font-size: x-large;
-  color: #2f5135;
-  -webkit-text-stroke: 1px #9df203;
+.leftContainer {
+  width: 30vw;
+  padding: 0 20px;
+  float: left;
+
+
 }
+
+.rightContainer {
+  width: 50vw;
+  padding: 0 20px;
+  float: right;
+
+
+}
+
 input {
   height: 40px;
   width: 60%;
   border-color: #2f5135;
   border-radius: 10px;
   background-color: #b8fe7a;
+
 }
+
+label {
+  font-weight: bold;
+  font-size: x-large;
+  color: #2f5135;
+
+
+}
+
 button {
+  width: 80px;
   height: 40px;
-  width: 40%;
+  font-size: medium;
+  font-weight: bold;
+  color: #2f5135;
   border-color: #2f5135;
   border-radius: 10px;
   background-color: #b8fe7a;
 }
+
 select {
   height: 40px;
   width: 20%;
   border-color: #2f5135;
   border-radius: 10px;
 }
+
+
 

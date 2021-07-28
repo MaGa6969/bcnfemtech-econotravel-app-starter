@@ -71,7 +71,12 @@ export function Experiencias(){
             {
                 cards.map(card => (
                     <div className="experiencia" key={card.id}>
-                        <Card title={card.title} imgSrc={card.image} descripcion={card.descripcion} precio={card.precio} duracion={card.duracion} accesibilidad={card.accesibilidad} etiquetas={card.etiquetas} />
+                        <Card title={card.title}
+                              imgSrc={card.image}
+                              descripcion={card.descripcion}
+                              precio={card.precio} duracion={card.duracion}
+                              accesibilidad={card.accesibilidad}
+                              etiquetas={card.etiquetas} />
 {/*                        <IconButton
                             className={clsx(classes.expand, {
                                 [classes.expandOpen]: expanded,

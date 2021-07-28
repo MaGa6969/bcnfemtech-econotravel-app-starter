@@ -12,8 +12,9 @@ export const App = () => {
 
  return <Router>
         <NavBar/>
+
         <Switch>
-            <Route path="/inicio">
+            <Route exact path="/">
                 <Inicio/>
             </Route>
             <Route path="/about">
