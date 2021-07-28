@@ -30,7 +30,7 @@ export const Reservas = () => {
 
 
     return (
-        <form onSubmit={enviarDatos}>
+        <form className="formulario" onSubmit={enviarDatos}>
             <label>Actividades</label>
             <br/>
             <select onChange={inputChange}
@@ -78,7 +78,7 @@ export const Reservas = () => {
             <label>Teléfono de contacto</label>
             <br/>
             <input
-                type="text"
+                type="number"
                 name="telefono"
                 onChange={inputChange}
             />
