@@ -4,7 +4,7 @@ import Bici from './assets/Bici.jpg';
 import Barco from './assets/Barco.jpg';
 import Modernista from './assets/Modernista.jpg';
 import Huerto from './assets/Huerto.jpg';
-import Montserrat from './assets';
+import Montserrat from './assets/Montserrat.png';
 
 const cards = [
     {

@@ -1,11 +1,6 @@
 import * as React from "react";
 import {useState} from "react";
 import DatePicker from "react-datepicker";
-import 'react-datepicker/dist/react-datepicker-cssmodules.css';
-
-
-
-
 
 
 export const Reservas = () => {
@@ -33,6 +28,7 @@ export const Reservas = () => {
 
     const [selectedDate, setSelectedDate] = useState(new Date());
 
+
     return (
         <form onSubmit={enviarDatos}>
             <label>Actividades</label>
@@ -46,14 +42,18 @@ export const Reservas = () => {
             <br/>
             <br/>
             <label>Fecha</label>
-            <DatePicker
-                selected={selectedDate}
-                onChange={date => setSelectedDate(date)}
-                dateFormat='dd/MM/yyyy'
-                isClearable
-                showYearDropdown
-                scrollableMonthYearDropdown
-                minDate={new Date()}
+
+            <DatePicker className="calendario"
+                        selected={selectedDate}
+                        onChange={date => setSelectedDate(date)}
+                        dateFormat='dd/MM/yyyy'
+                        isClearable
+                        showYearDropdown
+                        scrollableMonthYearDropdown
+                        inline
+                        minDate={new Date()}
+
+
             />
             <br/>
             <br/>

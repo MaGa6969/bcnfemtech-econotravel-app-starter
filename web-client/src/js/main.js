@@ -5,6 +5,7 @@ import '../scss/main.scss'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {App} from './components/App'
+import 'react-datepicker/dist/react-datepicker.css';
 
 
 ReactDOM.render(
