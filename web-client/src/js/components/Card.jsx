@@ -6,11 +6,11 @@ export function Card ({imgSrc, title, descripcion, precio, duracion, accesibilid
         <div className="card">
             <img src={imgSrc} alt=""/>
             <div className="card__body">
-                <h2 className="card__title">{title}</h2>
+                <h1 className="card__title">{title}</h1>
                 <p className="card__descripcion">{descripcion}</p>
-                <h3 className="card__precio">{precio}</h3>
-                <h4 className="card__duracion">{duracion}</h4>
-                <h5 className="card__accesibilidad">{accesibilidad}</h5>
+                <h2 className="card__precio">{precio}</h2>
+                <h2 className="card__duracion">{duracion}</h2>
+                <h3 className="card__accesibilidad">{accesibilidad}</h3>
                 <p className="card__etiquetas">{etiquetas}</p>
             </div>
         {/*   <IconButton
