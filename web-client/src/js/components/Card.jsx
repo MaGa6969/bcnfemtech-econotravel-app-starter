@@ -8,9 +8,11 @@ export function Card ({imgSrc, title, descripcion, precio, duracion, accesibilid
             <div className="card__body">
                 <h1 className="card__title">{title}</h1>
                 <p className="card__descripcion">{descripcion}</p>
-                <h2 className="card__precio">{precio}</h2>
-                <h2 className="card__duracion">{duracion}</h2>
-                <h3 className="card__accesibilidad">{accesibilidad}</h3>
+                <div>
+                    <h2 className="card__precio">Precio: {precio}</h2>
+                    <h2 className="card__duracion">Duración: {duracion}</h2>
+                </div>
+                <h3 className="card__accesibilidad">Accesibilidad: {accesibilidad}</h3>
                 <p className="card__etiquetas">{etiquetas}</p>
             </div>
         {/*   <IconButton
