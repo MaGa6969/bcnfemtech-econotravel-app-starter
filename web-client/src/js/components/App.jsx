@@ -7,10 +7,9 @@ import {Reservas} from "./Reservas";
 import {Inicio} from "./Inicio";
 
 
-
 export const App = () => {
 
- return <Router>
+    return <Router>
         <NavBar/>
 
         <Switch>

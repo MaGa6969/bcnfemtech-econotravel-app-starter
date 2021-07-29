@@ -4,6 +4,7 @@
 import '../scss/main.scss'
 import '../scss/reservas.scss'
 import '../scss/card.scss'
+import '../scss/about.scss'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {App} from './components/App'

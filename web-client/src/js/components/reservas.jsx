@@ -1,7 +1,7 @@
 import * as React from "react";
 import {useState} from "react";
 import DatePicker from "react-datepicker";
-import {Card} from "./Card";
+// import {Card} from "./Card";
 
 
 
@@ -33,16 +33,19 @@ export const Reservas = () => {
 
     return (
         <div className="pageContainer">
-
+            <h1>FORMULARIO DE RESERVA</h1>
         <form onSubmit={enviarDatos}>
             <div className="leftContainer">
             <label>Actividades</label>
             <br/>
             <select onChange={inputChange}
                     name="actividades">
-                <option value={Card.id}>{Card.title}</option>
-                {/*<option value="playa">Playa</option>
-                <option value="ciudad">Ciudad</option>*/}
+                {/*<option value={Card.id}>{Card.title}</option>*/}
+                <option value="montseny">Bici por Montseny</option>
+                <option value="barco">Barco Vela</option>
+                <option value="barcelona">BCN Noche</option>
+                <option value="huerto">Huerto Urbano</option>
+                <option value="montserrat">Arte en Monserrat</option>
             </select>
             <br/>
             <br/>
@@ -98,6 +101,7 @@ export const Reservas = () => {
                 <button  className="reserva" type="submit">Reserva</button>
             </div>
         </form>
+
         </div>
 
     )

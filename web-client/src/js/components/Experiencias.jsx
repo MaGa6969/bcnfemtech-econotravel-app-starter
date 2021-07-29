@@ -19,21 +19,21 @@ const cards = [
     },
     {
         id: 2,
-        title:"Descubre la costa en barco de vela",
+        title: "Descubre la costa en barco de vela",
         image: Barco,
-        precio:"280€",
-        descripcion:"Disfruta de un hermoso paseo acuático en barco de vela por la increíble costa de Barcelona. Una escapada veraniega apta incluso para los días más calurosos del año. Descubre los encantadores alrededores de la ciudad de Barcelona y visita desde el mar sus más impresionantes playas y calas. " +
+        precio: "280€",
+        descripcion: "Disfruta de un hermoso paseo acuático en barco de vela por la increíble costa de Barcelona. Una escapada veraniega apta incluso para los días más calurosos del año. Descubre los encantadores alrededores de la ciudad de Barcelona y visita desde el mar sus más impresionantes playas y calas. " +
             "Comenzaremos la excursión en el Puerto de Barcelona, desde donde partiremos hacia el norte para visitar playas como la Mar Bella, la Playa de la Mora y la Playa de los Pescadores." +
             "A bordo de la embarcación podremos disfrutar de una selección de quesos y embutidos catalanes acompañada de cava brut y zumos de frutas. Asimismo, pararemos cerca de la Playa de Montgat para realizar una actividad de buceo de superficie que nos permitirá apreciar la diversidad de la fauna marítima local y su ecosistema. Finalizaremos la excursión en el mismo puerto del que partimos.",
-        duracion:"4h",
-        accesibilidad:"Actividad disponible para todas las edades. Pasarela para silla de ruedas disponible bajo reserva.",
-        etiquetas:"Playa, barco, excursión larga."
+        duracion: "4h",
+        accesibilidad: "Actividad disponible para todas las edades. Pasarela para silla de ruedas disponible bajo reserva.",
+        etiquetas: "Playa, barco, excursión larga."
     },
     {
         id: 3,
         title: "Descubre la Barcelona Modernista de noche",
         image: Modernista,
-        precio:"200€",
+        precio: "200€",
         descripcion: "Desplazarse a pie es una de las mejores formas de descubrir las maravillas modernistas que se esconden en el barcelonés distrito del Eixample, ubicado en el centro de la ciudad. En esta excursión de cuatro horas, descubriremos los principales emblemas del modernismo y visitaremos los templos y edificios más célebres del arquitecto Gaudí. " +
             "El tour incluye visita guiada al interior de la Casa Batlló y la Sagrada Familia, así como parada para cenar en el restaurante típico catalán Can Masiá, donde disfrutaremos de las mejores carnes de la región acompañadas de vinos de las tierras del Baix Empordá. El restaurante también ofrece opciones vegetarianas y veganas así como menú para niños. Cava aparte.",
         duracion: "4h",
@@ -53,7 +53,7 @@ const cards = [
     },
     {
         id: 5,
-        title: "Arte en la montaña sagrada",
+        title: "Arte en la Montaña Sagrada",
         image: Montserrat,
         precio: "125€",
         descripcion: "Disfruta de la impresionante Montaña de Montserrat donde encontraréis el Museo con las salas modernistas de Puig i Cadafalch, lugar que acoge colecciones de gran valor en el corazón de la emblemática montaña. En el Museo encontraréis pinturas del Renacimiento y del Barroco que conviven con autores de los siglos XIX y XX, objetos del Próximo Oriente y orfebrería. Además de disfrutar de un paseo guiado por la montaña y el Museo, esta actividad incluye tentempié variado acompañado de vino espumoso, cava brut o refresco. ",
@@ -65,7 +65,7 @@ const cards = [
 ]
 
 
-export function Experiencias(){
+export function Experiencias() {
     return (
         <div className="cardContainer">
             {
@@ -76,8 +76,8 @@ export function Experiencias(){
                               descripcion={card.descripcion}
                               precio={card.precio} duracion={card.duracion}
                               accesibilidad={card.accesibilidad}
-                              etiquetas={card.etiquetas} />
-{/*                        <IconButton
+                              etiquetas={card.etiquetas}/>
+                        {/*                        <IconButton
                             className={clsx(classes.expand, {
                                 [classes.expandOpen]: expanded,
                             })}
@@ -91,5 +91,6 @@ export function Experiencias(){
                 ))
             }
         </div>
-    )}
+    )
+}
 
