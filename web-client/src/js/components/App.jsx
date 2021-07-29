@@ -7,13 +7,13 @@ import {Reservas} from "./Reservas";
 import {Inicio} from "./Inicio";
 
 
-
 export const App = () => {
 
- return <Router>
+    return <Router>
         <NavBar/>
+
         <Switch>
-            <Route path="/inicio">
+            <Route exact path="/">
                 <Inicio/>
             </Route>
             <Route path="/about">

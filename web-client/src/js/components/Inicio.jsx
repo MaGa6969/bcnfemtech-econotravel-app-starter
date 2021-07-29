@@ -5,4 +5,5 @@ export const Inicio = () => (
     <div>
         <img className={"eco"} src={eco}/>
     </div>
+
 );

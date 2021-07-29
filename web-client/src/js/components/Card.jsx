@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 
-export function Card ({imgSrc, title, descripcion, precio, duracion, accesibilidad, etiquetas}) {
+export function Card({imgSrc, title, descripcion, precio, duracion, accesibilidad, etiquetas}) {
     return (
         <div className="card">
             <img src={imgSrc} alt=""/>
@@ -15,7 +15,7 @@ export function Card ({imgSrc, title, descripcion, precio, duracion, accesibilid
                 <h3 className="card__accesibilidad">Accesibilidad: {accesibilidad}</h3>
                 <p className="card__etiquetas">{etiquetas}</p>
             </div>
-        {/*   <IconButton
+            {/*   <IconButton
                 className={clsx(classes.expand, {
                     [classes.expandOpen]: expanded,
                 })}

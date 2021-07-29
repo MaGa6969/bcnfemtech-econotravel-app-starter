@@ -1,10 +1,12 @@
 import * as React from "react";
 import {useState} from "react";
 import DatePicker from "react-datepicker";
+// import {Card} from "./Card";
+
 
 
 export const Reservas = () => {
-
+    document.body.style.background= '#e3bb99';
     const [datos, setDatos] = useState({
         actividades: '',
         fecha: '',
@@ -30,20 +32,25 @@ export const Reservas = () => {
 
 
     return (
-        <form className="formulario" onSubmit={enviarDatos}>
+        <div className="pageContainer">
+            <h1>FORMULARIO DE RESERVA</h1>
+        <form onSubmit={enviarDatos}>
+            <div className="leftContainer">
             <label>Actividades</label>
             <br/>
             <select onChange={inputChange}
                     name="actividades">
-                <option value="montanya">Montaña</option>
-                <option value="playa">Playa</option>
-                <option value="ciudad">Ciudad</option>
+                {/*<option value={Card.id}>{Card.title}</option>*/}
+                <option value="montseny">Bici por Montseny</option>
+                <option value="barco">Barco Vela</option>
+                <option value="barcelona">BCN Noche</option>
+                <option value="huerto">Huerto Urbano</option>
+                <option value="montserrat">Arte en Monserrat</option>
             </select>
             <br/>
             <br/>
             <label>Fecha</label>
-
-            <DatePicker className="calendario"
+            <DatePicker
                         selected={selectedDate}
                         onChange={date => setSelectedDate(date)}
                         dateFormat='dd/MM/yyyy'
@@ -52,11 +59,9 @@ export const Reservas = () => {
                         scrollableMonthYearDropdown
                         inline
                         minDate={new Date()}
-
-
             />
-            <br/>
-            <br/>
+            </div>
+            <div className="rightContainer">
             <label>Nombre y Apellidos</label>
             <br/>
             <input
@@ -78,7 +83,7 @@ export const Reservas = () => {
             <label>Teléfono de contacto</label>
             <br/>
             <input
-                type="number"
+                type="text"
                 name="telefono"
                 onChange={inputChange}
             />
@@ -93,9 +98,12 @@ export const Reservas = () => {
             />
             <br/>
             <br/>
-            <button type="submit">Reserva</button>
-
+                <button  className="reserva" type="submit">Reserva</button>
+            </div>
         </form>
+
+        </div>
+
     )
 
 }
