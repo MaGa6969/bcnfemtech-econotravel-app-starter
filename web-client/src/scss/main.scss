@@ -15,6 +15,7 @@ body {
   background-color: #2f5135;
   height: 15vh;
 
+
   .logo {
     width: 12%;
   }
@@ -31,14 +32,26 @@ body {
     font-weight: bolder;
   }
 }
+.heroImg {
+  position: relative;
+  text-align: center;
 
+}
+
+.reservaAhora {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #e1e0cd;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+}
 .eco {
   width: 100%;
 }
 
-form {
-  padding: 30px;
-}
 
 @media (max-width: 700px) {
   .navBar {
