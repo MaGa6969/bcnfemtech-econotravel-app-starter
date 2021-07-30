@@ -12,5 +12,7 @@ export const NavBar = () => (
         <Link to={"/experiencias"}>Experiencias</Link>
         <Link to={"/reservas"}>Reservas</Link>
 
+
+
     </nav>
 )

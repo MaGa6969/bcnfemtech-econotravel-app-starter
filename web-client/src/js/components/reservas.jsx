@@ -1,12 +1,13 @@
 import * as React from "react";
 import {useState} from "react";
 import DatePicker from "react-datepicker";
-// import {Card} from "./Card";
+import {Link} from "react-router-dom";
+
 
 
 
 export const Reservas = () => {
-    document.body.style.background= '#e3bb99';
+
     const [datos, setDatos] = useState({
         actividades: '',
         fecha: '',
@@ -27,6 +28,10 @@ export const Reservas = () => {
         event.preventDefault();
 
     }
+    const redirigeAgradecimiento = (callback) => {
+        callback.alert('¡Muchas Gracias! ¡La reserva ha sido creada correctamente!');
+        window.location.replace('/Agradecimiento');
+    }
 
     const [selectedDate, setSelectedDate] = useState(new Date());
 
@@ -34,23 +39,23 @@ export const Reservas = () => {
     return (
         <div className="pageContainer">
             <h1>FORMULARIO DE RESERVA</h1>
-        <form onSubmit={enviarDatos}>
-            <div className="leftContainer">
-            <label>Actividades</label>
-            <br/>
-            <select onChange={inputChange}
-                    name="actividades">
-                {/*<option value={Card.id}>{Card.title}</option>*/}
-                <option value="montseny">Bici por Montseny</option>
-                <option value="barco">Barco Vela</option>
-                <option value="barcelona">BCN Noche</option>
-                <option value="huerto">Huerto Urbano</option>
-                <option value="montserrat">Arte en Monserrat</option>
-            </select>
-            <br/>
-            <br/>
-            <label>Fecha</label>
-            <DatePicker
+            <form onSubmit={enviarDatos}>
+                <div className="leftContainer">
+                    <label>Actividades</label>
+                    <br/>
+                    <select onChange={inputChange}
+                            name="actividades">
+
+                        <option value="montseny">Bici por Montseny</option>
+                        <option value="barco">Barco Vela</option>
+                        <option value="barcelona">BCN Noche</option>
+                        <option value="huerto">Huerto Urbano</option>
+                        <option value="montserrat">Arte en Monserrat</option>
+                    </select>
+                    <br/>
+                    <br/>
+                    <label>Fecha</label>
+                    <DatePicker
                         selected={selectedDate}
                         onChange={date => setSelectedDate(date)}
                         dateFormat='dd/MM/yyyy'
@@ -59,48 +64,48 @@ export const Reservas = () => {
                         scrollableMonthYearDropdown
                         inline
                         minDate={new Date()}
-            />
-            </div>
-            <div className="rightContainer">
-            <label>Nombre y Apellidos</label>
-            <br/>
-            <input
-                type="text"
-                name="nombre"
-                onChange={inputChange}
-            />
-            <br/>
-            <br/>
-            <label>Personas</label>
-            <br/>
-            <input
-                type="text"
-                name="personas"
-                onChange={inputChange}
-            />
-            <br/>
-            <br/>
-            <label>Teléfono de contacto</label>
-            <br/>
-            <input
-                type="text"
-                name="telefono"
-                onChange={inputChange}
-            />
-            <br/>
-            <br/>
-            <label>Email</label>
-            <br/>
-            <input
-                type="text"
-                name="email"
-                onChange={inputChange}
-            />
-            <br/>
-            <br/>
-                <button  className="reserva" type="submit">Reserva</button>
-            </div>
-        </form>
+                    />
+                </div>
+                <div className="rightContainer">
+                    <label>Nombre y Apellidos</label>
+                    <br/>
+                    <input
+                        type="text"
+                        name="nombre"
+                        onChange={inputChange}
+                    />
+                    <br/>
+                    <br/>
+                    <label>Personas</label>
+                    <br/>
+                    <input
+                        type="text"
+                        name="personas"
+                        onChange={inputChange}
+                    />
+                    <br/>
+                    <br/>
+                    <label>Teléfono de contacto</label>
+                    <br/>
+                    <input
+                        type="text"
+                        name="telefono"
+                        onChange={inputChange}
+                    />
+                    <br/>
+                    <br/>
+                    <label>Email</label>
+                    <br/>
+                    <input
+                        type="text"
+                        name="email"
+                        onChange={inputChange}
+                    />
+                    <br/>
+                    <br/>
+                    <Link to={"/Agradecimiento"}><button className="reserva" type="button" onClick={redirigeAgradecimiento}>Reserva</button></Link>
+                </div>
+            </form>
 
         </div>
 

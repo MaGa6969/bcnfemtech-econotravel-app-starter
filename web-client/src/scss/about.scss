@@ -1,23 +1,37 @@
 .bicis {
   width: 100%;
-
-}
+  }
 
 .ownerImg {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
+
 }
 
-.owner {
+.imagenes {
+  display: flex;
+  flex-direction: column;
+}
+.owner, .logoconfondo {
   width: 300px;
   height: 450px;
+  margin: 50px;
+  border: 15px solid #2f5135;
+  border-radius: 15px;
 }
 
-p {
+.aboutUs {
   font-weight: bold;
   font-size: xx-large;
   color: #2f5135;
-  font-family: Vivaldi;
- }
+  font-family: "Century Schoolbook";
+  clear: both;
+  width: 1200px;
+  padding: 70px;
+  border: 15px solid #9df203;
+  margin: 50px;
+  border-radius: 15px;
+  background-color: #cbffa3;
+   }
