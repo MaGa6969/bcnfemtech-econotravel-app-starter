@@ -77,16 +77,7 @@ export function Experiencias() {
                               precio={card.precio} duracion={card.duracion}
                               accesibilidad={card.accesibilidad}
                               etiquetas={card.etiquetas}/>
-                        {/*                        <IconButton
-                            className={clsx(classes.expand, {
-                                [classes.expandOpen]: expanded,
-                            })}
-                            onClick={handleExpandClick}
-                            aria-expanded={expanded}
-                            aria-label="show more"
-                        >
-                            <ExpandMoreIcon />
-                        </IconButton>*/}
+
                     </div>
                 ))
             }

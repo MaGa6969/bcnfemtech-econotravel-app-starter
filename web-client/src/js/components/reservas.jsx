@@ -1,7 +1,8 @@
 import * as React from "react";
 import {useState} from "react";
 import DatePicker from "react-datepicker";
-import {Link} from "react-router-dom";
+
+
 
 
 
@@ -25,13 +26,12 @@ export const Reservas = () => {
         })
     }
 
+
+
     const enviarDatos = (event) => {
+        alert('¡Muchas Gracias! ¡La reserva ha sido creada correctamente! Revise su correo electrónico para confirmar.');
         event.preventDefault();
 
-    }
-    const redirigeAgradecimiento = (callback) => {
-        callback.alert('¡Muchas Gracias! ¡La reserva ha sido creada correctamente!');
-        window.location.replace('/Agradecimiento');
     }
 
     const [selectedDate, setSelectedDate] = useState(new Date());
@@ -104,7 +104,8 @@ export const Reservas = () => {
                     />
                     <br/>
                     <br/>
-                    <Link to={"/Agradecimiento"}><button className="reserva" type="button" onClick={redirigeAgradecimiento}>Reserva</button></Link>
+
+                        <button className="reserva" type="submit">Reserva</button>
                 </div>
             </form>
 
