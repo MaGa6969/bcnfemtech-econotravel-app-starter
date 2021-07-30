@@ -1,7 +1,7 @@
 import * as React from "react";
 import {useState} from "react";
 import DatePicker from "react-datepicker";
-// import {Card} from "./Card";
+
 
 
 
@@ -40,7 +40,6 @@ export const Reservas = () => {
             <br/>
             <select onChange={inputChange}
                     name="actividades">
-                {/*<option value={Card.id}>{Card.title}</option>*/}
                 <option value="montseny">Bici por Montseny</option>
                 <option value="barco">Barco Vela</option>
                 <option value="barcelona">BCN Noche</option>
