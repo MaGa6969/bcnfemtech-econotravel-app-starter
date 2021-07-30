@@ -11,54 +11,49 @@ import {Link} from "react-router-dom";
 
 export const Inicio = () => {
 
-  return  <div>
+    return <div>
         <div className="heroImg">
             <img className={"eco"} src={eco}/>
-            <Link to={"/reservas"} className="reservaAhora">RESERVA <br/>tu aventura hoy<br/> </Link>
+            <Link to={"/reservas"} className="reservaAhora">RESERVA <br/>tu aventura hoy<br/></Link>
         </div>
         <div className="tarjetas">
-             <div className="tarjeta">
-                <img className={"tarjetaImg"} src={Bici}/>
+            <div className="tarjeta">
+                <Link to={"/experiencias"}><img className={"tarjetaImg"} src={Bici}/></Link>
                 <h2 className="tarjetaTitle">Paseo en bicicleta por el Montseny</h2>
                 <p className="tarjetaP">Disfruta de un hermoso paseo en bicicleta por el increíble
                     Parque Natural del Montseny.</p>
-                 <Link to={"/experiencias"}>ver mas</Link>
-                 <h2 className="precioTarjeta">250€</h2>
+                <h2 className="precioTarjeta">250€</h2>
                 <h2 className="tarjetaD">Duración: 5h</h2>
             </div>
 
             <div className="tarjeta">
-                <img className={"tarjetaImg"} src={Barco}/>
+                <Link to={"/experiencias"}><img className={"tarjetaImg"} src={Barco}/></Link>
                 <h2 className="tarjetaTitle">Descubre la costa en barco de vela</h2>
                 <p className="tarjetaP">Disfruta de un hermoso paseo acuático en barco
                     de vela por la increíble costa de Barcelona. </p>
-                <Link to={"/experiencias"}>ver mas</Link>
                 <h2 className="precioTarjeta">280€</h2>
                 <h2 className="tarjetaD">Duración: 4h</h2>
             </div>
             <div className="tarjeta">
-                <img className={"tarjetaImg"} src={Modernista}/>
+                <Link to={"/experiencias"}><img className={"tarjetaImg"} src={Modernista}/></Link>
                 <h2 className="tarjetaTitle">Descubre la Barcelona Modernista de noche</h2>
                 <p className="tarjetaP">Desplazarse a pie es la mejor forma de descubrir las maravillas
                     modernistas que se esconden en Barcelona</p>
-                <Link to={"/experiencias"}>ver mas</Link>
                 <h2 className="precioTarjeta">200€</h2>
                 <h2 className="tarjetaD">Duración: 4h</h2>
             </div>
             <div className="tarjeta">
-                <img className={"tarjetaImg"} src={Huerto}/>
+                <Link to={"/experiencias"}><img className={"tarjetaImg"} src={Huerto}/></Link>
                 <h2 className="tarjetaTitle">Del huerto a la mesa</h2>
                 <p className="tarjetaP">Comparte con los más pequeños las maravillas de la naturaleza y aprende
                     a cuidar de tu propio huerto.</p>
-                <Link to={"/experiencias"}>ver mas</Link>
                 <h2 className="precioTarjeta">145€</h2>
                 <h2 className="tarjetaD">Duración: 3h</h2>
             </div>
             <div className="tarjeta">
-                <img className={"tarjetaImg"} src={Montserrat}/>
+                <Link to={"/experiencias"}><img className={"tarjetaImg"} src={Montserrat}/></Link>
                 <h2 className="tarjetaTitle">Arte en la Montaña Sagrada</h2>
                 <p className="tarjetaP">Disfruta de la impresionante Montaña de Montserrat.</p>
-                <Link to={"/experiencias"} className="saberMas">ver mas</Link>
                 <h2 className="precioTarjeta">125€</h2>
                 <h2 className="tarjetaD">Duración: 2h</h2>
             </div>

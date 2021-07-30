@@ -5,13 +5,16 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+
 }
 
 .tarjeta {
   width: 20%;
-  border: 2px solid #4b7f55;
+  border: 8px solid #4b7f55;
+  border-radius: 15px;
   margin: 30px;
   height: border-box;
+  background-color: #d0f5d0;
 
 }
 
@@ -59,9 +62,5 @@
 
 }
 
-.saberMas {
-  width: 95%;
-  height: 10vh;
-  object-fit: cover;
-}
+
 
