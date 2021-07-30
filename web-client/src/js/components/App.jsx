@@ -5,9 +5,12 @@ import {About} from "./About";
 import {Experiencias} from "./Experiencias";
 import {Reservas} from "./Reservas";
 import {Inicio} from "./Inicio";
+import {Agradecimiento} from "./Agradecimiento";
 
 
 export const App = () => {
+
+
 
     return <Router>
         <NavBar/>
