@@ -39,7 +39,7 @@ export const Reservas = () => {
 
     return (
         <div className="pageContainer">
-            <h1>FORMULARIO DE RESERVA</h1>
+            <h1 className="hform">FORMULARIO DE RESERVA</h1>
             <form onSubmit={enviarDatos}>
                 <div className="leftContainer">
                     <label>Actividades</label>
